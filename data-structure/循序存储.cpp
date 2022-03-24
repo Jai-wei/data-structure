@@ -35,20 +35,38 @@ Status ListInsert(SqList& L, int i, Status e) {		//在第i处插入（现实i）
 		for (int k = L.length; k >= i; k--)
 			L.data[k] = L.data[k - 1];				//没有data[10],但是不会报错
 	}
-	L.data[i - 1] = e;
+	L.data[i - 1] = e;								//最后一个，不进循环
 	L.length++;
 	return OK;
 }
 
+Status ListDelete(SqList& L, int i, Status &e) {
+	if (L.length == 0 || (i<1 || i>L.length))
+		return Error;
 
+	e = L.data[i-1];
 
-
-int main() {
-	SqList L;
-	InitList(L);
-	ListInsert(L, 2, 3);
-	return 0;
+	if (i < L.length) {
+		for (int k = i; k < L.length; k++)		//不用等于length，最后一个数组不管
+			L.data[k - 1] = L.data[k];
+	}
+	L.length--;									//如果是最后一个，直接减减，不进循环
+	return e;
 }
+
+
+
+
+
+
+
+
+//int main() {
+//	SqList L;
+//	InitList(L);
+//	ListInsert (L, 10, 3);
+//	return 0;
+//}
 
 
 

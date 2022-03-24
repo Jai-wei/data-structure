@@ -21,7 +21,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="静态分配.cpp">
+    <ClCompile Include="循序存储.cpp">
+      <Filter>源文件\线性表\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="链式存储.cpp">
       <Filter>源文件\线性表\learning</Filter>
     </ClCompile>
   </ItemGroup>
