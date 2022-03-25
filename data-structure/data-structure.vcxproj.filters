@@ -24,7 +24,10 @@
     <ClCompile Include="循序存储.cpp">
       <Filter>源文件\线性表\learning</Filter>
     </ClCompile>
-    <ClCompile Include="链式存储.cpp">
+    <ClCompile Include="链式存储-带头结点.cpp">
+      <Filter>源文件\线性表\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="链式存储-不带头结点.cpp">
       <Filter>源文件\线性表\learning</Filter>
     </ClCompile>
   </ItemGroup>

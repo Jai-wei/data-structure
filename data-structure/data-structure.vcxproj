@@ -20,7 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="循序存储.cpp" />
-    <ClCompile Include="链式存储.cpp" />
+    <ClCompile Include="链式存储-不带头结点.cpp" />
+    <ClCompile Include="链式存储-带头结点.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
