@@ -15,7 +15,6 @@ bool InitList(LinkList& L) {
 bool Empty(LinkList L) {		
 	return (L == NULL);
 }
-
 bool ListInsert(LinkList& L, int i, Status e) {
 	if (i < 1)
 		return false;
@@ -43,6 +42,31 @@ bool ListInsert(LinkList& L, int i, Status e) {
 	p->next = s;
 	return true;
 }
+bool InsertNextNode(Node* p, Status e) {		//后插操作：在p节点之后插入元素e
+	if (p == NULL)
+		return false;
+	Node* s = (Node*)malloc(sizeof(Node));
+	if (s == NULL)
+		return false;
+	s->data = e;
+	s->next = p->next;
+	p->next = s;
+	return true;
+}
+bool InsertPriorNode(Node* p, Status e) {		//前插操作，在p之前插入e。通过顺移来实现！
+	if (p == NULL)
+		return false;
+	Node* s = (Node*)malloc(sizeof(Node));
+	if (s == NULL)
+		return false;
+	s->data = p->data;
+	s->next = p->next;
+	p->data = e;
+	p->next = s;
+	return true;
+
+}
+
 
 
 void test() {
