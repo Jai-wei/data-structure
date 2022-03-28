@@ -157,8 +157,6 @@ void test() {
 	LinkList L;
 	InitList(L);
 }
-
-
 int main() {
 
 	test();
