@@ -60,7 +60,7 @@ bool DeleteNode(Node* p) {		//删除指定节点
 		return false;
 	Node* s = p->next;
 	if (s->next == NULL)
-		return false;			//如果是最后一个节点，只能从头遍历删除
+		return false;			//如果是最后一个节点，只能从头遍历删除  这不是两个next吗？？？
 	p->data = s->data;			
 	p->next = s->next;
 	free(s);

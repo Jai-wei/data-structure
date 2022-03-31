@@ -22,7 +22,10 @@
     <ClCompile Include="循序存储.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="链式存储-头结点.cpp" />
+    <ClCompile Include="链式存储-不含头结点.cpp" />
+    <ClCompile Include="链式存储-头结点.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="链式存储-不带头结点.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -31,7 +34,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="链表代码注意点.txt" />
+    <Text Include="链式存储-不含头结点代码注意点.txt" />
+    <Text Include="链式存储-头结点代码注意点.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

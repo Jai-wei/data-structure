@@ -33,9 +33,15 @@
     <ClCompile Include="链式存储-头结点.cpp">
       <Filter>源文件\线性表</Filter>
     </ClCompile>
+    <ClCompile Include="链式存储-不含头结点.cpp">
+      <Filter>源文件\线性表</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="链表代码注意点.txt">
+    <Text Include="链式存储-头结点代码注意点.txt">
+      <Filter>源文件\线性表\learning</Filter>
+    </Text>
+    <Text Include="链式存储-不含头结点代码注意点.txt">
       <Filter>源文件\线性表\learning</Filter>
     </Text>
   </ItemGroup>

@@ -91,23 +91,82 @@ bool PrintList(LinkList L) {
 		printf("%d\t", e->value);
 		e = e->next;
 	}
+	printf("\n");
 	return true;
 }
-/*  */
-
-
-/*  */
-
-
-/*  */
-
-
-/*  */
-
-
-/*  */
-
-
+/*  按值查找  */
+Node* FindNodeValue(LinkList L, Status value) {
+	Node* p = L->next;
+	while (p != NULL && p->value != value)
+	{
+		p = p->next;
+	}
+	return p;
+}
+/*  按位查找  */
+Node* FindNodeNum(LinkList L, int i) {
+	if (i < 1)
+		return NULL;
+	Node* p = L->next;
+	int num = 1;
+	while (p != NULL && num < i)
+	{
+		p = p->next;
+		num++;
+	}
+	return p;
+}
+/*  删除节点  */
+bool DeleteNode(Node* p) {
+	if (p == NULL || p->next == NULL)	//p.next是确保不是删除最后一个节点
+		return false;
+	Node* s = p->next;
+	p->value = s->value;
+	p->next = s->next;
+	free(s);
+	return true;
+}
+/*  按位插入  */
+bool InsertNumNode(LinkList L, int i, Status value){
+	if (i < 0)
+		return false;
+	Node* p = L;
+	int num = 1;
+	while (p != NULL && num <i)
+	{
+		p = p->next;
+		num++;
+	}
+	InsertNextNode(p, value);
+	return true;
+}
+/*  按位删除  */
+bool DeleteNodeNum(LinkList L, int i, Status& e) {
+	//该函数不能删除最后一个节点！
+	if (i < 0 || L->next == NULL)
+		return false;
+	Node* p = L;
+	int num = 0;
+	while (p != NULL && num < i)
+	{
+		p = p->next;
+		num++;
+	}
+	e = p->value;
+	DeleteNode(p);
+	return true;
+}
+/*    长度    */
+int ListLength(LinkList L) {
+	int num = 0;
+	Node* p = L;
+	while (p->next != NULL)
+	{
+		p = p->next;
+		num++;
+	}
+	return num;
+}
 
 
 
@@ -117,5 +176,8 @@ int main() {
 	InitList(Test);
 	InitHeadList(Test);
 	PrintList(Test);
+	int e;
+	e = ListLength(Test);
+	printf("%d", e);
 	return 0;
 }
