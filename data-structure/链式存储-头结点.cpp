@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-typedef int Status;
 
+typedef int Status;
 typedef struct Node {
 	Status value;
 	Node* next;
@@ -167,8 +167,6 @@ int ListLength(LinkList L) {
 	}
 	return num;
 }
-
-
 
 
 int main() {

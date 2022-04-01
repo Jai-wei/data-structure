@@ -88,6 +88,8 @@ bool InitHeadList(Linklist& L) {
 	Status value;
 	Node* s = L;
 	scanf("%d", &value);
+	if (value == 9999)
+		return false;
 	if (L == NULL) {
 		Node* p = (Node*)malloc(sizeof(Node));
 		p->value = value;
@@ -137,19 +139,41 @@ bool DeleteNode(Node* old) {
 	old->value = old->next->value;
 	//old->next->value = bet;
 	old->next = old->next->next;
-	free(old->next);
+	//free(old->next->next);
 	return true;
 }
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-
-
-
+/*  按位插入  */
+bool InsertNumNode(Linklist L, int i, Status value) {
+	if (L == NULL || i < 1)
+		return false;
+	Node* p = L;	int num = 1;
+	while (p != NULL && num < i)
+	{
+		p = p->next;
+		num++;
+	}
+	InsertHeadNode(p, value);
+	return true;
+}
+/*  按位删除  */
+bool DeleteNode(Linklist L, int i,Status &value) {
+	if (L == NULL || i < 1)
+		return false;
+	Node* e = FindNodeNum(L, i);
+	DeleteNode(e);
+	return true;
+}
+/*    长度    */
+int ListLength(Linklist L) {
+	int length = 0;
+	Node* p = L;
+	while (p != NULL)
+	{
+		p = p->next;
+		length++;
+	}
+	return length;
+}
 
 
 int main() {
@@ -157,7 +181,8 @@ int main() {
 	InitList(Test);
 	InitHeadList(Test);
 	PrintList(Test);
-	DeleteNode(FindNodeValue(Test, 88));
-	PrintList(Test);
+	int x;
+	x = ListLength(Test);
+	printf("%d", x);
 	return 0;
 }

@@ -16,19 +16,19 @@
     <Filter Include="源文件\线性表">
       <UniqueIdentifier>{feb9ddea-46ab-43a5-b0a9-6d80c2fec486}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\线性表\learning">
+    <Filter Include="源文件\线性表\Learning%28Pass%29">
       <UniqueIdentifier>{4dd1433c-d34c-4f6c-b019-6645158cf175}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="循序存储.cpp">
-      <Filter>源文件\线性表\learning</Filter>
+    <ClCompile Include="X循序存储.cpp">
+      <Filter>源文件\线性表\Learning%28Pass%29</Filter>
     </ClCompile>
-    <ClCompile Include="链式存储-带头结点.cpp">
-      <Filter>源文件\线性表\learning</Filter>
+    <ClCompile Include="X链式存储-带头结点.cpp">
+      <Filter>源文件\线性表\Learning%28Pass%29</Filter>
     </ClCompile>
-    <ClCompile Include="链式存储-不带头结点.cpp">
-      <Filter>源文件\线性表\learning</Filter>
+    <ClCompile Include="X链式存储-不带头结点.cpp">
+      <Filter>源文件\线性表\Learning%28Pass%29</Filter>
     </ClCompile>
     <ClCompile Include="链式存储-头结点.cpp">
       <Filter>源文件\线性表</Filter>
@@ -39,10 +39,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="链式存储-头结点代码注意点.txt">
-      <Filter>源文件\线性表\learning</Filter>
+      <Filter>源文件\线性表\Learning%28Pass%29</Filter>
     </Text>
     <Text Include="链式存储-不含头结点代码注意点.txt">
-      <Filter>源文件\线性表\learning</Filter>
+      <Filter>源文件\线性表\Learning%28Pass%29</Filter>
     </Text>
   </ItemGroup>
 </Project>
