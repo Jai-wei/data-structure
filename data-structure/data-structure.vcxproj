@@ -19,7 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="X双链表-带头结点.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="X循序存储.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="X静态链表.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="链式存储-不含头结点.cpp">
@@ -36,6 +42,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="循环链表.txt" />
     <Text Include="链式存储-不含头结点代码注意点.txt" />
     <Text Include="链式存储-头结点代码注意点.txt" />
   </ItemGroup>
