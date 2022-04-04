@@ -28,6 +28,8 @@
     <ClCompile Include="X静态链表.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="栈-顺序存储.cpp" />
+    <ClCompile Include="队列-循序存储.cpp" />
     <ClCompile Include="链式存储-不含头结点.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
