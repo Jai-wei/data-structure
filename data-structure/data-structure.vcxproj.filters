@@ -22,6 +22,15 @@
     <Filter Include="源文件\栈">
       <UniqueIdentifier>{841503eb-fd89-4e36-ba31-66e223d2c6f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\栈\Learning%28Pass%29">
+      <UniqueIdentifier>{4ed27dde-3c13-451e-a1b1-19e816878ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\队列">
+      <UniqueIdentifier>{9585a451-82aa-4310-b944-01b0b5652229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\队列\Learning%28Pass%29">
+      <UniqueIdentifier>{247fe95f-9203-4ac5-83b2-a61acb7baaa5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="X循序存储.cpp">
@@ -44,6 +53,27 @@
     </ClCompile>
     <ClCompile Include="X静态链表.cpp">
       <Filter>源文件\线性表\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="栈-顺序存储.cpp">
+      <Filter>源文件\栈\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="队列-循序存储.cpp">
+      <Filter>源文件\队列\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="队列-链式存储-头结点.cpp">
+      <Filter>源文件\队列\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="队列-链式存储-不带头结点.cpp">
+      <Filter>源文件\队列\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="双端队列.cpp">
+      <Filter>源文件\队列\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="括号匹配问题.cpp">
+      <Filter>源文件\栈\Learning%28Pass%29</Filter>
+    </ClCompile>
+    <ClCompile Include="表达式求值.cpp">
+      <Filter>源文件\栈\Learning%28Pass%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
